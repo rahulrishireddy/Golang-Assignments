@@ -50,4 +50,7 @@ func IntegerVariables() {
 	var value5 int64 = 1
 	fmt.Println("value5 is", value5)
 
+	// var value6 int32 = -2147483649  //
+	// fmt.Println("value6 is", value6) //cannot use it since it is out of range again this time it is negative integer range
+
 }

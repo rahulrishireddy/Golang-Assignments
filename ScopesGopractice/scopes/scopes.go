@@ -4,7 +4,7 @@ import "fmt"
 
 var c int = 40
 
-var Gvari int = 50
+var Globalvar int = 50
 
 func Scopes() {
 

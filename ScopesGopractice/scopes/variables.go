@@ -29,8 +29,8 @@ func IntegerVariables() {
 	var value1 int8 = 50
 	fmt.Println("value1 is", value1)
 
-	// var value2 int8 = 129
-	// fmt.Println("value2 is", value2)   // cannot use this sice range of 8 bit integer is from -128 to 127
+	var value21 uint8 = 129
+	fmt.Println("value21 is", value21) // cannot use this sice range of 8 bit integer is from -128 to 127
 
 	var value2 int16 = 129
 	fmt.Println("value2 is", value2) // the same can be acheived by using int16 since 16 bit has -32768 to +32767
@@ -53,4 +53,42 @@ func IntegerVariables() {
 	// var value6 int32 = -2147483649  //
 	// fmt.Println("value6 is", value6) //cannot use it since it is out of range again this time it is negative integer range
 
+}
+
+func ArthOperation() {
+
+	intA := 20
+	intB := 27
+	floatA := 22.5
+	floatB := 12.7
+
+	intsum := intA + intB
+
+	fmt.Println("intsum is", intsum) // addition of the integers
+
+	intsub := intA - intB
+
+	fmt.Println("intsub is", intsub) // subtraction of the integers
+
+	intmul := intA * intB
+
+	fmt.Println("intmul is", intmul) // multiplication of the integers
+
+	floatsum := floatA + floatB
+	fmt.Println("floatsum is", floatsum) // addition of float
+
+	floatsub := floatA - floatB
+	fmt.Println("floatsub is", floatsub) // subtraction of float
+
+	floatMul := floatA * floatB
+	fmt.Println("floatMul is", floatMul) // subtraction of float
+
+	i := 10
+	j := 27.5
+
+	k := i + int(j)
+	fmt.Println("k is", k) // type conversion of float and adding it to int
+
+	floatconv := j + float64(i)
+	fmt.Println("floatconv is", floatconv) // type conversion of int and adding it to float
 }

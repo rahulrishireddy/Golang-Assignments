@@ -92,3 +92,8 @@ func ArthOperation() {
 	floatconv := j + float64(i)
 	fmt.Println("floatconv is", floatconv) // type conversion of int and adding it to float
 }
+
+func add(){
+
+	
+}
